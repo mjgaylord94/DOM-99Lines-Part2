@@ -23,6 +23,18 @@ function buttonClicked(e) {
 
     // Calling the function by looping through the friends array
     for (i = 0; i < friends.length; i++) {
+        let songContainer = document.createElement(`div`)
+        songContainer.classList.add(`friend`)
+        let containerTitle = document.createElement(`h3`)
+        let containerTitleText = document.createTextNode(`${friends[i]}`)
+        let songParagraph = document.createElement(`p`)
+
+        containerTitle.appendChild(containerTitleText)
+        songContainer.appendChild(containerTitle)
+        songContainer.appendChild(songParagraph)
+
+        document.body.appendChild(songContainer)
+
         song(friends[i])
     }
 
