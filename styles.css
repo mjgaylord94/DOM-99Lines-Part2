@@ -16,3 +16,10 @@ h1 {
 .friend > h3 {
     text-transform: uppercase;
 }
+
+button {
+    padding: 0.5em;
+    margin: 1em;
+    font-size: large;
+    background-color: darkgoldenrod;
+}
